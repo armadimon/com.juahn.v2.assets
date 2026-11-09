@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-09",
+  "unity": "6000.3.11f1",
+  "addressables": "2.9.1",
+  "unitask": "2.5.11",
+  "ugui": "2.0.0",
+  "pure_core_tests": {
+    "assets": 16,
+    "lifecycle": 13,
+    "tables": 14,
+    "platform": 8
+  },
+  "pure_core_total": 51,
+  "unity_playmode_tests": 13,
+  "package_boundary_checks": 11,
+  "negative_boundary_tests": 4,
+  "netstandard_target": "netstandard2.1",
+  "external_service_transactions_tested": false
+}

@@ -1,0 +1,10 @@
+{
+  "assemblies": {
+    "juahn.v2.Assets": {
+      "references": [],
+      "noEngineReferences": true
+    }
+  },
+  "assemblyOwners": {},
+  "consumerDependencies": []
+}

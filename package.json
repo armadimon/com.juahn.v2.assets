@@ -1,0 +1,11 @@
+{
+  "name": "com.juahn.v2.assets",
+  "displayName": "Juahn V2 Assets",
+  "version": "0.1.0",
+  "unity": "6000.0",
+  "author": "armadimon",
+  "license": "MIT",
+  "type": "library",
+  "description": "Counted asset leases, shared loads, isolated cancellation and explicit app/session/pool scopes.",
+  "dependencies": {}
+}

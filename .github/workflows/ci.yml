@@ -1,0 +1,22 @@
+name: package-validate
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python Tools~/validate_package.py
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Check .NET Standard 2.1 compatibility
+        if: hashFiles('Tools~/compile-check/Runtime.csproj') != ''
+        run: dotnet build Tools~/compile-check/Runtime.csproj --configuration Release
+      - name: Run core regression tests
+        if: hashFiles('Tests~/dotnet/Tests.csproj') != ''
+        run: dotnet test Tests~/dotnet/Tests.csproj --configuration Release --logger trx

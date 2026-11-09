@@ -1,0 +1,12 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+bin/
+[Ll]ogs/
+[Bb]uilds/
+*.user
+*.suo
+*.pdb
+.DS_Store
+.vs/
+.idea/
